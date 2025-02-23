@@ -4,8 +4,6 @@
     discord
     nodejs
     obs-studio
-    orca-slicer
     vscode-fhs
-    kicad
   ];
 }
