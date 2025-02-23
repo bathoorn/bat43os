@@ -65,6 +65,7 @@
     bat
     tmux
     neofetch
+    sxiv
     socat
     unrar
     unzip
