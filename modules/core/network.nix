@@ -33,23 +33,7 @@
         ip46tables -t mangle -D nixos-fw-rpfilter -p udp -m udp --dport 51820 -j RETURN || true
       '';
     };
-    wg-quick.interfaces = {
-      wg-techinc = {
-        address = ["10.209.31.10/24" "2a02:fe9:12f6:531::a/64"];
-        dns = ["10.209.60.254" "ti"];
-        privateKeyFile = "/root/wireguard-keys/techinc-privatekey";
-
-        peers = [
-          {
-            publicKey = "";
-            presharedKeyFile = "/root/wireguard-keys/techinc-presharedkey";
-            allowedIPs = ["10.209.0.0/16" "2a02:fe9:12f6:500::/56"];
-            endpoint = "vpn.techinc.nl:51820";
-            persistentKeepalive = 25;
-          }
-        ];
-      };
-    };
+    #wg-quick.interfaces.techinc0.configFile = "/root/wireguard-keys/techinc0.conf";
   };
 
   environment.systemPackages = with pkgs; [networkmanagerapplet];
