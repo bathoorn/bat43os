@@ -78,7 +78,7 @@
 
       theme = {
         enable = true;
-        name = "dracula";
+        name = "gruvbox";
         style = "dark";
         transparent = true;
       };
@@ -179,6 +179,13 @@
 
         images = {
           image-nvim.enable = false;
+        };
+      };
+
+      terminal = {
+        toggleterm = {
+          enable = true;
+          lazygit.enable = true;
         };
       };
 

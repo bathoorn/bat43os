@@ -65,6 +65,7 @@
     bat
     tmux
     neofetch
+    superfile
     sxiv
     socat
     unrar
@@ -74,5 +75,6 @@
     virt-viewer
     wget
     ytmdl
+    wireguard-tools
   ];
 }
