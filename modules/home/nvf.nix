@@ -111,6 +111,7 @@
         clang.enable = true;
         zig.enable = true;
         python.enable = true;
+        java.enable = true;
         markdown.enable = true;
         ts.enable = true;
         html.enable = true;
